@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This page built display the predicted result using LR model</title>
+</head>
+<body>
+    <div class="body_content">
+        <h2>Your chance of Admission is {{value_01}}</h2>
+        <div class="repeat_loop">
+            <form action="/" method="POST">
+                <h3>Want to predict for someone else too!!</h3><br>
+                <input type="submit" value="Yes">
+            </form>
+            <form action="/thanks" method="POST">
+                <input type="submit" value="No">
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
