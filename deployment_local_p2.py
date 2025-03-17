@@ -51,5 +51,4 @@ def lr_model_prediction():
         raise Exception ("(lr_model_prediction): Something went wrong while prediction from a lr model, {}".format(e)) from None
 
 
-app_obj.debug = True
 app_obj.run()
