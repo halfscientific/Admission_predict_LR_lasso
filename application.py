@@ -1,6 +1,7 @@
 
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS,cross_origin
 
 import pandas as pd
 import numpy as np
@@ -50,5 +51,5 @@ def lr_model_prediction():
     except Exception as e:
         raise Exception ("(lr_model_prediction): Something went wrong while prediction from a lr model, {}".format(e)) from None
 
-
-app_obj.run()
+if __name__ == "__main__":
+    app_obj.run()
